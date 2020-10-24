@@ -12,7 +12,6 @@ const youtube = axios.create({
     baseURL: 'https://www.googleapis.com/youtube/v3',
 });
 
-console.log(process.env.SECRET_KEY)
 
 async function findVideos(searchTerm) {
     const { data: { items: videos } } = await youtube.get("search", {
@@ -71,6 +70,8 @@ function init(searchTerm="javascript") {
    findVideos(searchTerm).then(videos => {
         const allvids = videos.map(video => new Video(video)) 
 
+        console.log(allvids) 
+        
         // main video 
         mainVideoEl.innerHTML = allvids[0].mainHTML 
         
