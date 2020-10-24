@@ -1,0 +1,32 @@
+{
+  "name": "YouTubeClone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "http://ch374n.github.io/youtube-clone",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "predeploy": "rm -rf dist && parcel build index.html ",
+    "deploy": "gh-pages -d dist"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
