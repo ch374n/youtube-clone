@@ -7,7 +7,6 @@
 
 body {
 	margin: 0;
-	background: #ededce;
 }
 
 .header {
@@ -72,12 +71,12 @@ body {
 
 .video-container {
 	display: inline-flex;
-	margin: 0 0 1rem 1.2rem;
+	margin: 0 0 0.8rem 1rem;
 	border: 1px solid gray;
-	box-shadow: 5px 5px 8px #888888;
+	box-shadow: 2px 2px 2px #888888;
 	cursor: pointer;
 	font-size: 11px;
-
+	width: 445px;
 }
 
 .thumbnail {
@@ -105,13 +104,12 @@ body {
 .video-side-section {
 	text-align: center;
 	width: 15rem;
-	background: #c4e2db;	
 }
 
-.video-side-section h1 {
-	margin-top: 2rem;
-	font-size: 10px;
-	font-weight: 500;
+.video-side-section h3{
+	margin-top: 1.5rem;
+	font-size: 15px;
+	font-weight: 700;
 }
 
 .main-image {
@@ -126,10 +124,10 @@ body {
 .main-video {
 	width: 51rem;
 	border: 0.5px solid gray;
-	box-shadow: 5px 5px 8px #888888;
+	box-shadow: 2px 2px 2px #888888;
 	margin-left: 2rem;
 	height: 27rem;
-	background:#ceedd2; 
+	
 }
 
 
